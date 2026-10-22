@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="查看题目与样例，编辑 C++ 程序并提交判题。">
+  <title>做题 · OJ 练习场</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="module" src="/assets/problem.js"></script>
+</head>
+<body>
+  <header class="site-header"><div class="header-inner header-wide">
+    <a class="brand" href="/" aria-label="OJ 练习场首页"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>OJ <span class="brand-name">练习场</span></span></a>
+    <nav aria-label="主导航"><a class="nav-link" href="/">← 返回题库</a></nav>
+    <span class="language-label">C++11</span>
+  </div></header>
+
+  <main class="workbench-main">
+    <div class="panel state-box page-state" id="page-state" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><p>正在加载题目…</p></div>
+    <div class="workbench" id="workbench" hidden>
+      <article class="panel problem-panel" aria-labelledby="problem-title">
+        <div class="panel-heading"><h2>题目说明</h2><span class="muted" id="problem-number"></span></div>
+        <div class="problem-content">
+          <div class="problem-title-row"><h1 id="problem-title"></h1><span class="difficulty" id="problem-difficulty"></span></div>
+          <div class="limit-row"><span id="cpu-limit"></span><span id="memory-limit"></span></div>
+          <h2 class="section-label">题目描述</h2><p class="problem-description" id="problem-description"></p>
+          <section aria-labelledby="samples-title"><h2 class="section-label" id="samples-title">输入输出样例</h2><div id="samples"></div></section>
+          <p class="additional-limits muted" id="additional-limits"></p>
+        </div>
+      </article>
+
+      <div class="coding-column">
+        <section class="panel editor-panel" aria-labelledby="editor-title">
+          <form id="submit-form">
+            <div class="panel-heading"><div class="editor-heading"><h2 id="editor-title">代码编辑</h2><span class="small-tag">C++11</span></div><button class="text-button" id="reset-button" type="button" disabled>重置代码</button></div>
+            <label class="sr-only" for="code-editor">C++ 程序源码</label>
+            <div class="code-area"><pre class="line-numbers" id="line-numbers" aria-hidden="true">1</pre><textarea id="code-editor" spellcheck="false" autocapitalize="off" autocomplete="off" wrap="off" disabled></textarea></div>
+            <div class="editor-actions"><div><p class="draft-status" id="draft-status">草稿保存在当前浏览器</p><p class="keyboard-hint">Ctrl / ⌘ + Enter 提交</p></div><button class="button button-primary" id="submit-button" type="submit" disabled><span aria-hidden="true">▷</span><span id="submit-label">提交代码</span></button></div>
+          </form>
+        </section>
+
+        <section class="panel result-panel" aria-labelledby="result-heading" id="result-panel" data-tone="neutral">
+          <div class="panel-heading"><h2 id="result-heading">判题结果</h2><span class="result-code" id="result-code">待提交</span></div>
+          <div class="result-content">
+            <div class="result-summary" aria-live="polite" aria-atomic="true"><span class="result-icon" id="result-icon" aria-hidden="true">—</span><div><h3 id="result-title">准备好就提交吧</h3><p class="muted" id="result-message">提交后将在这里显示判题状态、程序输出和错误信息。</p></div></div>
+            <p class="stale-notice" id="stale-notice" hidden>这是上一次提交的结果，当前代码已修改。</p>
+            <p class="result-meta muted" id="result-meta" hidden></p>
+            <div id="result-details"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">认真思考，大胆尝试。<span aria-hidden="true">·</span><a href="/">返回题库</a></footer>
+</body>
+</html>

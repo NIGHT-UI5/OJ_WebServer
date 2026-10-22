@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="选择一道题目，编写 C++ 代码并在线提交判题。">
+  <title>题目列表 · OJ 练习场</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="module" src="/assets/problems.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="OJ 练习场首页"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>OJ <span class="brand-name">练习场</span></span></a>
+      <nav aria-label="主导航"><a class="nav-link is-active" href="/" aria-current="page">题库</a></nav>
+      <span class="language-label">C++11</span>
+    </div>
+  </header>
+
+  <main class="library-main">
+    <div class="page-heading">
+      <div><p class="eyebrow">从一道题开始</p><h1>题目列表</h1><p class="subtitle">读懂问题，写下思路，让代码给出答案。</p></div>
+      <button class="button button-secondary" id="refresh-button" type="button">刷新题目</button>
+    </div>
+
+    <section class="panel library-panel" aria-labelledby="library-title" aria-busy="true" id="library-panel">
+      <div class="panel-heading"><h2 id="library-title">全部题目</h2><span class="muted" id="problem-count">正在加载</span></div>
+      <div class="state-box" id="list-state" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><p>正在加载题目…</p></div>
+      <div class="table-scroll" id="problem-table-container" hidden>
+        <table class="problem-table"><caption class="sr-only">可练习的编程题目</caption>
+          <thead><tr><th scope="col" class="id-column">题号</th><th scope="col">题目</th><th scope="col">难度</th><th scope="col"><span class="sr-only">操作</span></th></tr></thead>
+          <tbody id="problem-list"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="library-note"><span class="note-symbol" aria-hidden="true">{ }</span><p>使用完整的 C++ 程序，通过标准输入读取数据、标准输出提交答案。</p></div>
+  </main>
+
+  <footer class="site-footer">OJ 练习场<span aria-hidden="true">·</span>每一次提交，都是一次进步。</footer>
+  <template id="problem-row-template"><tr><td class="problem-id"></td><td><a class="problem-link"></a></td><td><span class="difficulty"></span></td><td class="row-action"><a class="start-link">开始做题 <span aria-hidden="true">↗</span></a></td></tr></template>
+</body>
+</html>

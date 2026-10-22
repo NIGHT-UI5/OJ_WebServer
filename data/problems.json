@@ -1,0 +1,55 @@
+{
+  "problems": [
+    {
+      "id": "1001",
+      "title": "A + B",
+      "difficulty": "easy",
+      "description": "输入两个整数 a 和 b，输出它们的和。\n\n输入格式：一行两个整数，以空格分隔。\n输出格式：输出一个整数，并在行末换行。\n数据范围：-10^9 <= a, b <= 10^9。",
+      "starter_code": "#include <iostream>\n\nint main() {\n    long long a, b;\n    std::cin >> a >> b;\n    // 在这里完成计算并输出结果\n    return 0;\n}\n",
+      "limits": {
+        "cpu_limit_sec": 1,
+        "mem_limit_mb": 64,
+        "wall_limit_sec": 3,
+        "output_limit_mb": 1
+      },
+      "samples": [
+        {"input": "1 2\n", "output": "3\n"},
+        {"input": "-3 5\n", "output": "2\n"}
+      ]
+    },
+    {
+      "id": "1002",
+      "title": "从 1 加到 N",
+      "difficulty": "easy",
+      "description": "给定正整数 n，计算 1 + 2 + ... + n。\n\n输入格式：一行一个正整数 n。\n输出格式：输出求和结果，并在行末换行。\n数据范围：1 <= n <= 10^9。结果可能超过 32 位整数范围，请使用 long long。",
+      "starter_code": "#include <iostream>\n\nint main() {\n    long long n;\n    std::cin >> n;\n    // 在这里完成计算并输出结果\n    return 0;\n}\n",
+      "limits": {
+        "cpu_limit_sec": 1,
+        "mem_limit_mb": 64,
+        "wall_limit_sec": 3,
+        "output_limit_mb": 1
+      },
+      "samples": [
+        {"input": "3\n", "output": "6\n"},
+        {"input": "10\n", "output": "55\n"}
+      ]
+    },
+    {
+      "id": "1003",
+      "title": "判断回文串",
+      "difficulty": "easy",
+      "description": "给定一个仅包含小写英文字母的非空字符串，判断它从左向右读和从右向左读是否相同。\n\n输入格式：一行一个字符串 s。\n输出格式：如果是回文串，输出 YES；否则输出 NO。行末需要换行。\n数据范围：1 <= 字符串长度 <= 100000。",
+      "starter_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string s;\n    std::cin >> s;\n    // 在这里判断并输出结果\n    return 0;\n}\n",
+      "limits": {
+        "cpu_limit_sec": 1,
+        "mem_limit_mb": 64,
+        "wall_limit_sec": 3,
+        "output_limit_mb": 1
+      },
+      "samples": [
+        {"input": "aba\n", "output": "YES\n"},
+        {"input": "abc\n", "output": "NO\n"}
+      ]
+    }
+  ]
+}

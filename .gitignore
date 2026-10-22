@@ -1,0 +1,5 @@
+/run/
+/compile_server/compile_server
+/compile_server/tmp/
+/oj_server/oj_server
+__pycache__/
